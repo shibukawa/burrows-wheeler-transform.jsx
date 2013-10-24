@@ -30,7 +30,7 @@ class _Main {
         var result = BurrowsWheelerTransform.bwt('abracadabra', '$');
         // -> 'ard$rcaaaabb'
 
-        // Detail version 
+        // Detail version
         var bwt = new BurrowsWheelerTransform('abracadabra');
         console.log(bwt.get('$')); // -> 'ard$rcaaaabb'
         console.log(bwt.size());   // -> 12
@@ -51,6 +51,7 @@ var BWT = require('burrows-wheeler-transform.common.js').BurrowsWheelerTransform
 // use burrows-wheeler-transform.amd.js
 define(['burrows-wheeler-transform.js'], function (BWT) {
 
+    var bwt = new BWT.BurrowsWheelerTransform('text');
     // Write simple usage here!
 });
 ```
@@ -61,8 +62,8 @@ define(['burrows-wheeler-transform.js'], function (BWT) {
 <script src="burrows-wheeler-transform.js" type="text/javascript"></script>
 <script type="text/javascript">
 window.onload = function () {
-    var classObj = JSX.require("src/burrows-wheeler-transform.js").burrows-wheeler-transform.jsx;
-    var obj = new classObj();
+    var BWT = JSX.require("src/burrows-wheeler-transform.js").BurrowsWheelerTransform;
+    var bwt = new BWT('text');
 });
 </script>
 ```
@@ -88,7 +89,25 @@ $ npm install burrows-wheeler-transform.jsx
 API Reference
 ------------------
 
-Write reference here!
+### static BurrowsWheelerTransform.bwt(text : string, endMarker : string = default) : string
+
+It is a shortcut method to get converted string.
+
+### class BurrowsWheelerTransform(text : string)
+
+This constructer Converts input text and stores results in BWT transform.
+
+### BurrowsWheelerTransform.size() : int
+
+Input text size + sentinel(size 1).
+
+### BurrowsWheelerTransform.get(endMarker : string = default) : string
+
+Get converted text with specified or default endMarker.
+
+### BurrowsWheelerTransform.head() : int
+
+Head index in translated string.
 
 Development
 -------------
