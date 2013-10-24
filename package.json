@@ -1,0 +1,53 @@
+{
+  "name": "burrows-wheeler-transform.jsx",
+  "version": "0.1.0",
+  "description": "Burrows Wheeler transform library for JS/JSX/AMD/CommonJS",
+  "scripts": {
+    "build": "grunt build",
+    "test": "grunt test",
+    "doc": "grunt doc"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "keywords": [
+    "jsx",
+    "altjs",
+    "lib",
+    "js",
+    "amd",
+    "commonjs",
+    "nodejs",
+    "browser",
+    "burrows",
+    "wheeler",
+    "transform",
+    "natural language",
+    "compress",
+    "search",
+    "bwt"
+  ],
+  "main": "./lib/burrows-wheeler-transform.jsx",
+  "homepage": "http://github.com/shibukawa/burrows-wheeler-transform.jsx",
+  "bugs": {
+    "url": "http://github.com/shibukawa/burrows-wheeler-transform.jsx/issues"
+  },
+  "directories": {
+    "doc": "./doc",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git:/github.com/shibukawa/burrows-wheeler-transform.jsx.git"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.1",
+    "grunt-jsx": ">=0.1.5",
+    "binary-io.jsx": "~0.2.0",
+    "bit-vector.jsx": "~0.1.1"
+  },
+  "author": "shibukawa",
+  "license": "MIT"
+}
