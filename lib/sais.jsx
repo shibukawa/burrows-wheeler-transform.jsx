@@ -124,11 +124,18 @@ class SAIS
     {
         // Classify the type of each character
         var t = new ArrayBitVector();
-        t.set(n - 2, false);
-        t.set(n - 1, true); // the sentinel must be in s1, important!!!
+        t.set0(n - 2);
+        t.set1(n - 1); // the sentinel must be in s1, important!!!
         for (var i = n - 3; i >= 0; i--)
         {
-            t.set(i, (s.isS(i) || (s.compare(i, i + 1) && t.get(i + 1))));
+            if (s.isS(i) || (s.compare(i, i + 1) && t.get(i + 1)))
+            {
+                t.set1(i);
+            }
+            else
+            {
+                t.set0(i);
+            }
         }
 
         // stage 1: reduce the problem by at least 1/2
