@@ -97,15 +97,19 @@ It is a shortcut method to get converted string.
 
 This constructer Converts input text and stores results in BWT transform.
 
-### BurrowsWheelerTransform.size() : int
+### BurrowsWheelerTransform#size() : int
 
 Input text size + sentinel(size 1).
 
-### BurrowsWheelerTransform.get(endMarker : string = default) : string
+### BurrowsWheelerTransform#getChar(index : int) : string
+
+Get character at the index.
+
+### BurrowsWheelerTransform#get(endMarker : string = default) : string
 
 Get converted text with specified or default endMarker.
 
-### BurrowsWheelerTransform.head() : int
+### BurrowsWheelerTransform#head() : int
 
 Head index in translated string.
 

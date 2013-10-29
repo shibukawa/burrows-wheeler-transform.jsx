@@ -44,7 +44,7 @@ class OArray
 }
 
 
-class SAIS
+__export__ class SAIS
 {
     static function _isLMS (t : ArrayBitVector, i : int) : boolean
     {

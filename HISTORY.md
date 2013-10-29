@@ -1,6 +1,10 @@
 Change History
 =================
 
+## 0.2.0 (2013/10/29)
+
+* Add __export__ and clean up methods
+
 ## 0.1.3 (2013/10/29)
 
 * Update bit-vector.jsx version.

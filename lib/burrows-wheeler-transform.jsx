@@ -1,6 +1,6 @@
 import "sais.jsx";
 
-class BurrowsWheelerTransform
+__export__ class BurrowsWheelerTransform
 {
     static var END_MARKER = String.fromCharCode(0);
 
@@ -36,7 +36,7 @@ class BurrowsWheelerTransform
         this._suffixarray.length = 0;
     }
 
-    function get (i : int) : string
+    function getChar (i : int) : string
     {
         var size = this.size();
         if (i >= size)
@@ -47,24 +47,25 @@ class BurrowsWheelerTransform
         return this._str.charAt(index);
     }
 
-    function get () : string
+    function get (replace : Nullable.<string>) : string
     {
-        var str = [] : string [];
+        var result = '';
         var size = this.size();
         for (var i = 0; i < size; i++)
         {
-            str.push(this.get(i));
+            result += this.getChar(i);
         }
-        return str.join("");
+        if (replace != null)
+        {
+            return result.replace(BurrowsWheelerTransform.END_MARKER, replace);
+        }
+        else
+        {
+            return result;
+        }
     }
 
-    function get (replace : string) : string
-    {
-        var result = this.get();
-        return result.replace(BurrowsWheelerTransform.END_MARKER, replace);
-    }
-
-    static function bwt(src : string, endMarker : string = BurrowsWheelerTransform.END_MARKER) : string
+    static function bwt(src : string, endMarker : Nullable.<string>) : string
     {
         var bwt = new BurrowsWheelerTransform(src);
         return bwt.get(endMarker);
