@@ -1,6 +1,6 @@
 {
   "name": "burrows-wheeler-transform.jsx",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Burrows Wheeler transform library for JS/JSX/AMD/CommonJS",
   "scripts": {
     "build": "grunt build",
@@ -46,7 +46,8 @@
     "grunt": "~0.4.1",
     "grunt-jsx": ">=0.1.5",
     "binary-io.jsx": "~0.2.0",
-    "bit-vector.jsx": "~0.2.0"
+    "bit-vector.jsx": "~0.3.0",
+    "binary-support.jsx": "~0.1.0"
   },
   "author": "shibukawa",
   "license": "MIT"

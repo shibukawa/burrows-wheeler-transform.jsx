@@ -1,10 +1,14 @@
 Change History
 =================
 
-## 0.1.1 (2013/10/24)
+## 0.1.3 (2013/10/29)
 
-* Fix document
+* Update bit-vector.jsx version.
 
-## 0.1.0 (2013/10/23)
+## 0.1.2 (2013/10/24)
 
-* First version
+* Fix document.
+
+## 0.1.1 (2013/10/23)
+
+* First version.

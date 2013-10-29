@@ -223,7 +223,6 @@ class SAIS
                 SA1[s1.get(i)] = i;
             }
         }
-
         // stage 3: induce the result for the original problem
 
         bkt = [] : int[];
