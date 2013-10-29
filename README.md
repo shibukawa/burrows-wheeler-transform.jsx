@@ -62,7 +62,7 @@ define(['burrows-wheeler-transform.js'], function (BWT) {
 <script src="burrows-wheeler-transform.js" type="text/javascript"></script>
 <script type="text/javascript">
 window.onload = function () {
-    var BWT = JSX.require("src/burrows-wheeler-transform.js").BurrowsWheelerTransform;
+    var BWT = JSX.require("lib/burrows-wheeler-transform.js").BurrowsWheelerTransform;
     var bwt = new BWT('text');
 });
 </script>

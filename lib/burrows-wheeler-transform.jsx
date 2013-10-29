@@ -47,6 +47,11 @@ __export__ class BurrowsWheelerTransform
         return this._str.charAt(index);
     }
 
+    __noexport__ function get () : string
+    {
+        return this.get(null);
+    }
+
     function get (replace : Nullable.<string>) : string
     {
         var result = '';

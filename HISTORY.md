@@ -1,6 +1,10 @@
 Change History
 =================
 
+## 0.2.1 (2013/10/29)
+
+* Add __noexport__ helper function
+
 ## 0.2.0 (2013/10/29)
 
 * Add __export__ and clean up methods
