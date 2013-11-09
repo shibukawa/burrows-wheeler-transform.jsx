@@ -1,6 +1,10 @@
 Change History
 =================
 
+## 0.3.0 (2013/11/09)
+
+* Restructure folder structure
+
 ## 0.2.1 (2013/10/29)
 
 * Add __noexport__ helper function
